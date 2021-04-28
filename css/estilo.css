@@ -1,0 +1,13 @@
+#bol{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+body{
+    background-color: rgb(2, 61, 39);
+}
+
+#perfil{
+    background-color: #000;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contos Brasil - Seu site sobre literatura</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <style>
+    body{
+        background-image: url(img/pngwing.com.png);
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+    }
+    .coluna1, .coluna2{
+        width: 45%;
+    }
+    figure{
+        height: 600px;
+        overflow: hidden;
+    }
+    .popup{
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        width: 350px;
+        padding: 10px;
+        background-color: rgb(248, 168, 181);
+        border: 2px solid #000;
+        box-shadow: 4px 4px 4px #000;
+        display: none;
+    }
+    .fechar{
+        position: absolute;
+        right: -30px;
+        top: 0;
+        cursor: pointer;
+    }
+    .abre-popup{
+        padding: 10px;
+        cursor: pointer;
+    }
+    .abre-popup, .abre-popup h2{
+        width: fit-content;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- Cabeçalho do site com logotipo e menu -->
+    <header>
+       <div class="logo"> 
+           <h1 title="Seu site com grandes crônicas da literatura brasileira"><i class="fas fa-book-open"></i> CONTOS BRASIL</h1>
+       </div> 
+       <!-- menu principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="o-homem-trocado.html">O homem Trocado</a></li>
+            <li><a href="vida-de-cinema.html">Vida de Cinema</a></li>
+            <li><a href="amor.html">Amor</a></li>
+            <li><a href="felicidade-clandestina.html">Felicidade Clandestina</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <section class="abre-popup">
+        <h2>*PARTICIPE DE UM SORTEIO DE LIVRO*</h2>
+    </section>
+
+    <section class="popup">
+        <button type="button" class="fechar"> X </button>
+        <p>Preencha o seu nome e email e concorra
+            a um livro de crônicas da Clarice Lispector
+        </p>
+        <form>
+           <label for="nome">Nome:</label>
+           <input type="text" id="nome" name="nome"><br>
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email"><br>
+           <input type="submit" value="Enviar">
+
+
+        </form>
+    </section>
+
+    <!-- Área de conteúdo - contos e fotos -->
+    <div class="conteudo">
+       <div class="coluna1">
+    <h2>Luiz Fernando Veríssimo</h2>
+        <figure>
+        <img src="img/luiz_3.jpg" width="80%" alt="Escritor Luiz Fernando Veríssimo">
+    </figure>
+           <p>Luis Fernando Verissimo é um escritor, humorista, cartunista, tradutor, roteirista de televisão, autor de teatro e romancista brasileiro. Já foi publicitário e revisor de jornal. É ainda músico, tendo tocado saxofone em alguns conjuntos. Com mais de 80 titulos publicados, é um dos mais populares escritores brasileiros comteporâneos.</p>
+           <iframe width="100%" height="400" src="https://www.youtube.com/embed/LHy12KNUOIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+       <div class="coluna2">
+        <h2>Clarice Lispector</h2>
+        <figure>  
+        <img src="img/clarisse_1.jpg" width="80%" alt="Escritora Clarice Lispector">
+        </figure> 
+           <p>Clarice Lispector, nascida Chaya Pinkhasovna Lispector, foi uma escritora e jornalista brasileira nascida na Ucrânia. Autora de romances, contos, e ensaios, é considerada uma das escritoras brasileiras mais importantes do século XX e a maior escritora judia desde Franz Kafka.</p>
+           <iframe width="100%" height="400" src="https://www.youtube.com/embed/ohHP1l2EVnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+    </div>
+
+    <!-- Rodapé com créditos e outros conteúdos -->
+    <!-- <footer onclick="javascript:alert('Olá mundo!!')"> -->
+    <footer id="rodape">   
+        <p>Onde Estamos:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7330.493927160409!2d-45.865933693015236!3d-23.270474449463656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7490dd6bf3832cd!2sPra%C3%A7a%20Ayrton%20Senna%20da%20Silva!5e0!3m2!1spt-BR!2sbr!4v1617105108535!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>&copy; 2021 - Contos Brasil - Deselvolvido por Fernando Zukas</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // isto é um comentario de linha
+        /* a sintaxe para execução de um método
+        a partir de um elemento é feita conforme abaixo: */
+       /*  document.getElementById('rodape').onclick = function(){
+            console.log('Bom dia, a data atual é '+ Date());
+        } */
+
+    $('#rodape').click(function(){
+        console.log('Bom dia, a data atual é ' + Date());
+    })    
+
+    // exibe o popup ao clicar
+    $('.abre-popup').click(function(){
+        // $('.popup').css('display','block')
+        // $('.popup').fadeIn(1500);
+        $('.popup').slideDown();
+    });
+    $('.fechar').click(function(){
+        $('.popup').slideUp();
+    })
+</script>
+    
+</body>
+</html>
