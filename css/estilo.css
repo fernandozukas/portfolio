@@ -7,9 +7,10 @@ body{
 }
 
 #bol{
-    height: 450px;
-    width: 450px;
+    height: 320px;
+    width: 295px;
     border-radius: 100%;
+    border: 2px rgb(71, 71, 71) solid;
 }
 
 body{
