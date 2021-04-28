@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Biblioteca de icones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
-     <!-- Estilos CSS personalizados -->
-     <link rel="stylesheet" href="css/estilo.css">
+    <!-- css do AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="css/estilo.css">
     </head>
   <body>
 
@@ -24,7 +28,7 @@
              <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="collapsibleNavId">
-             <ul class="navbar-nav mt">
+             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                  <li class="nav-item active">
                      <a class="nav-link rolagem" href="#portifolio">Portifólio <span class="sr-only">(current)</span></a>
                  </li>
@@ -45,30 +49,30 @@
     <figure class="p-3 text-center">
         <img id="bol" src="img/5.png" width="15%">
     </figure>  
-    <h1 class="text-center p-1 text-light">Fernando Zukas</h1>
-    <p class="text-light text-center"><strong>Programação e Manutenção</strong><br>
+    <h1 class="text-center text-light p-3" >Fernando Zukas<br><i class="fas fa-minus fa-1x p-3"></i></h1>
+    <p class="text-light text-center p-3"><strong>Programação e Manutenção</strong><br>
     <i class="fas fa-laptop-code text-center fa-2x p-2"></i><i class="fas fa-desktop fa-2x p-2"></i><i class="fas fa-mouse fa-2x p-2"></i><i class="fas fa-wrench fa-2x p-2"></i></p>
 </div>
 <!-- final perfil -->
 
 <!-- inicio portifolio -->
 <div class="container">
-    <div class="text-center mt-5 text-light">
+    <div class="text-center text-light cow- mt-5 p-3" data-aos="zoom-in">
      <section id="portifolio">
        <h2><strong>Portifólio</strong></h2>
        <p>Meus Sites</p>
        <div class="row">
-        <div class="col-md-4">
-            <a href="contos.html"><img src="img/contos.png" width="70%"></a>
-            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="70%" ></a></a>
+        <div class="col-md-4" data-aos="zoom-in">
+            <a href="contos.html"><img src="img/contos.png" width="90%"></a>
+            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="90%" ></a></a>
         </div>
-        <div class="col-md-4">
-            <a href="contos.html"><img src="img/contos.png" width="70%"></a>
-            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="70%" ></a></a>
+        <div class="col-md-4" data-aos="zoom-in">
+            <a href="contos.html"><img src="img/contos.png" width="90%"></a>
+            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="90%" ></a></a>
         </div>
-        <div class="col-md-4">
-            <a href="contos.html"><img src="img/contos.png" width="70%"></a>
-            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="70%" ></a></a>
+        <div class="col-md-4" data-aos="zoom-in">
+            <a href="contos.html"><img src="img/contos.png" width="90%"></a>
+            <a href="marketing.html"> <a href="marketing.html"><img src="img/marketing.png" width="90%" ></a></a>
         </div>
     </div>
      </section>
@@ -77,37 +81,36 @@
 <!-- final portifólio -->
 
 <!-- inicio sobre mim -->
-<div class="container">
+<div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
     <section id="mim" class="text-center p-5 text-light">
-        <h3><strong>Sobre Mim</strong></h3>
-        <div class="row">
-            <div class="col-md">
-                <p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Cevadis im ampola pa arma uma pindureta. Viva Forevis aptent taciti sociosqu ad litora torquent. Interagi no mé, cursus quis, vehicula ac nisi.</p>
-            </div>
-            <div class="col-md mt-6">
-                <p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Cevadis im ampola pa arma uma pindureta. Viva Forevis aptent taciti sociosqu ad litora torquent. Interagi no mé, cursus quis, vehicula ac nisi.</p>
-            </div>
+    <h3><strong>Sobre Mim</strong><br><i class="fas fa-minus fa-2x"></i><i class="fas fa-minus fa-2x"></i></h3>
+    <div class="row">
+        <div class="col-md">
+            <p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Cevadis im ampola pa arma uma pindureta. Viva Forevis aptent taciti sociosqu ad litora torquent. Interagi no mé, cursus quis, vehicula ac nisi.</p>
         </div>
-    </section>
+        <div class="col-md">
+            <p>Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Cevadis im ampola pa arma uma pindureta. Viva Forevis aptent taciti sociosqu ad litora torquent. Interagi no mé, cursus quis, vehicula ac nisi.</p>
+        </div>
+    </div>
+</section>
 </div>
 <!-- final sobre mim -->
 
 <!-- inicio contatos -->
 <div class="container">
     <section id="contatos">
-        <div class="text-center text-light p-3">
+        <div class="text-center text-light">
             <h4><strong>Contatos</strong></h4>
-          <a href="https://www.facebook.com/" class="fab fa-facebook-f fa-2x text-light"></i>Facebook</a>
-          <a href="https://twitter.com" i class="fab fa-twitter fa-2x text-light"></i>Twitter</a>
+          <a href="https://www.facebook.com/Lucian.MyMain/" class="fab fa-facebook-f fa-2x text-light"></i>Facebook</a>
+          <a href="https://twitter.com/Akkuz_" i class="fab fa-twitter fa-2x text-light"></i>Twitter</a>
         </div>
     </section>
 </div>
 <!-- final contatos -->
-<footer>
-    <div class="text center">
-        <p>Criado por: Fernando Zukas</p>
-        <p>2021</p>
-    </div>
+
+<footer class="text-center text-light p-5 mt-5">
+    <p>Criado por: Fernando Zukas</p>
+    <p>2021</p>
 </footer>
 
 
@@ -165,6 +168,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Códigos JS do site Marketing -->
     <script src="js/code.js"></script>
   </body>
